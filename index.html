@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin panel</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <h3>admin panel</h3>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+        </ul>
+    </nav>
+    <div>
+        <div class="add">
+            <button class="add-button">add</button>
+
+        </div>
+        <form id="addForm" enctype="multipart/form-data" method="POST" style="display:none;">
+    <h2>add data</h2>
+    <input type="file" name="image" required>
+    <input type="text" name="name" placeholder="product-name" required>
+    <input type="text" name="description" placeholder="description" required>
+    <input type="submit" value="submit">
+</form>
+
+
+        <div class="all-data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>discription</th>
+                        <th>product new image</th>
+                        <th>image</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td><input class="btn" type="text" placeholder="" value="product-name"></td>
+                        <td><input class="btn" type="text" placeholder="" value="product-discription"></td>
+                        <td><input class="btn" accept="image" type="file" ></td>
+                        <td><img src="/images/product.png" alt="image" width="125px" height="125px" draggable="false"></td>
+                        <td>
+                            <button class="btn">submit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input class="btn" type="text" placeholder="" value="product-name"></td>
+                        <td><input class="btn" type="text" placeholder="" value="product-discription"></td>
+                        <td><input class="btn" accept="image" type="file" ></td>
+                        <td><img src="/images/product.png" alt="image" width="125px" height="125px" draggable="false"></td>
+                        <td>
+                            <button class="btn">submit</button>
+                        </td>
+                    </tr> -->
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <script type="module" src="index.js"></script>
+</body>
+
+</html>
