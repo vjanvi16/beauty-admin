@@ -110,12 +110,11 @@ tbody.addEventListener("click", async function(e) {
         location.reload();
     }
 
-    
+
     // DELETE BUTTON
     if (e.target.classList.contains("delete-btn")) {
         const row = e.target.closest("tr");
         const id = row.getAttribute("data-id");
-
         const res = await fetch(`http://127.0.0.1:5000/delete/${id}`);
         const data = await res.json();
 
