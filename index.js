@@ -110,6 +110,7 @@ tbody.addEventListener("click", async function(e) {
         location.reload();
     }
 
+    
     // DELETE BUTTON
     if (e.target.classList.contains("delete-btn")) {
         const row = e.target.closest("tr");

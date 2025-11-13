@@ -80,6 +80,7 @@ def insert():
 #     cur.execute("DELETE FROM images WHERE id=%s",(id_data))
 #     mysql.connection.commit()
 #     return jsonify({"message": "deleted"})
+
 @app.route('/delete/<string:id_data>', methods=['GET'])
 def delete(id_data):
     cur = mysql.connection.cursor()
